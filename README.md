@@ -15,18 +15,9 @@ $ npm install --save bilinear-interpolate
 
 ```javascript
 var bilinearInterpolate = require('bilinear-interpolate');
-bilinearInterpolate(); // "awesome"
+var line = bilinearInterpolate([[4, 45.5], [5, 44.5]]); 
+line(4.5); // 45.0
 ```
-
-## API
-
-_(Coming soon)_
-
-
-## Contributing
-
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [gulp](http://gulpjs.com/).
-
 
 ## License
 
@@ -40,5 +31,3 @@ Copyright (c) 2016 Grady Morgan. Licensed under the MIT license.
 [travis-image]: https://travis-ci.org/gradymorgan/bilinear-interpolate.svg?branch=master
 [daviddm-url]: https://david-dm.org/gradymorgan/bilinear-interpolate.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/gradymorgan/bilinear-interpolate
-[coveralls-url]: https://coveralls.io/r/gradymorgan/bilinear-interpolate
-[coveralls-image]: https://coveralls.io/repos/gradymorgan/bilinear-interpolate/badge.png
